@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+body{
+    height: 100vh;
+    background: #222;
+}
+
+div{
+    width: 100%;
+    height: 50vh;
+    background: #000;
+}
+
+#up{
+    animation: up 4s forwards ease-out;
+}
+
+#down{
+    animation: down 4s forwards ease-out;
+}
+
+@keyframes up {
+    to{
+        transform: translateY(-50vh);
+    }
+}
+
+@keyframes down {
+    to{
+        transform: translateY(50vh);
+    }
+}
